@@ -40,3 +40,31 @@ function playStatistics2(){
 }, 0);
 }
 console.log(playStatistics2());
+
+function playStatistics4(){
+  var newArray=[];
+  var count=1;
+  while(count<=8) {
+    newArray.push(rollOne());
+    count++;
+    console.log(newArray)
+  }
+  var sum= newArray.reduce(function(a, b) {
+  return a + b;
+}, 0);
+  return sum/(newArray.length-1)
+}
+console.log(playStatistics4());
+
+
+// console.log(playStatistics())
+
+// var name;
+
+// function greet (name) {
+//   return 'Hello ' + name 
+// }
+
+// console.log(greet('Suhas'));
+
+// console.log('name is', name);
