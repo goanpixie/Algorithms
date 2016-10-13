@@ -22,6 +22,21 @@ function playStatistics() {
   return {
     min: newArray[0],
     max: newArray[newArray.length - 1]
+   
   };
   // return playStatistics()
 }
+
+function playStatistics2(){
+  var newArray=[];
+  var count=1;
+  while(count<=8) {
+    newArray.push(rollOne());
+    count++;
+    console.log(newArray)
+  }
+  return newArray.reduce(function(a, b) {
+  return a + b;
+}, 0);
+}
+console.log(playStatistics2());
