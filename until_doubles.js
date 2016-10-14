@@ -7,6 +7,7 @@ function twice_in_a_row() {
   var newArray=[];
   var count=1;
   newArray.push(until_doubles());
+  newArray.push(until_doubles());
   while(newArray[count]!=newArray[count-1])
   {
     newArray.push(until_doubles());
@@ -14,10 +15,7 @@ function twice_in_a_row() {
   }
   
   return{
-    newArray;
-    
-    // sorted_array;
-    // min: sorted_array[0];
-    // max:sorted_array[newArray.length-1];
+    newArray
+   }
 }
 console.log(twice_in_a_row())
