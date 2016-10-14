@@ -13,9 +13,12 @@ function twice_in_a_row() {
     newArray.push(until_doubles());
     count++;
   }
-  
-  return{
-    newArray
-   }
+console.log(newArray)  
+var sort=(newArray.sort(function(a, b){return a-b}))
+
+return{
+  max: sort[sort.length-1],
+  min: sort[0],
+}
 }
 console.log(twice_in_a_row())
