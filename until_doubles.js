@@ -13,7 +13,7 @@ function twice_in_a_row() {
     newArray.push(until_doubles());
     count++;
   }
-console.log(newArray)  
+console.log(newArray)
 var sort=(newArray.sort(function(a, b){return a-b}))
 
 return{
