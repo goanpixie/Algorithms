@@ -18,3 +18,5 @@ function significant_digit(num){
     }
  }
 significant_digit(0.99)
+
+//spits out the digit greater than 0 in the number from the leftmost side
