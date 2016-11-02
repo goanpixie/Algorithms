@@ -125,7 +125,6 @@ function monthName(monthNum){
   switch(monthNum){
     case 1:
       month="January";
-      
       break;
     case 2:
       month="February";
@@ -228,5 +227,62 @@ function monthToDays(monthNum){
 }
 
 (monthToDays(12));
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.Given a number btw 1-365, gives the month:
+
+
+
+function dayTomonth(days){
+var monthNum;
+if (days>31){
+ var temp=days-31;
+ if (temp>28){
+   var temp1=temp-28;
+    if (temp1>31){
+      var temp2=temp1-31
+        if (temp2>30){
+        var temp3=temp2-30;
+          if (temp3>31){
+          var temp4=temp3-31;
+            if (temp4>30){
+            var temp5=temp4-30;
+               if (temp5>31){
+               var temp6=temp5-31;
+                 if (temp6>31){
+                 var temp7=temp6-31;
+                   if (temp7>30){
+                   var temp8=temp7-30;
+                     if (temp8>31){
+                     var temp9=temp8-31;
+                       if (temp9>30){
+                       monthNum=12;
+                       }
+                       else{monthNum=11}
+                     }
+                     else{monthNum=10}
+                   }
+                   else{monthNum=9}
+                 }
+                 else{monthNum=8}
+               }
+               else{monthNum=7}
+            }
+            else{monthNum=6}
+          }
+          else{monthNum=5}
+        }
+        else{monthNum=4}
+    }
+    else{monthNum=3}
+ }
+  else{monthNum=2}
+}
+else{monthNum=1}
+monthName(monthNum);
+}
+dayTomonth(375);
+
 
 
