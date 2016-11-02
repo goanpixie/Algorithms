@@ -236,6 +236,10 @@ function monthToDays(monthNum){
 
 function dayTomonth(days){
 var monthNum;
+if(days>375){
+  console.log("Give a number between 1-375");
+}
+else if (days>31){
 if (days>31){
  var temp=days-31;
  if (temp>28){
