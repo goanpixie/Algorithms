@@ -1,3 +1,5 @@
+// You are at street level(0), given array of building height which are one behind another, return an array containing only visible buildings:
+
 function SkylineHeights(Arr){
   var Arr2=[];
   var Max=0;
