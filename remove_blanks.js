@@ -1,3 +1,6 @@
+//remove blank spaces from the given string
+
+
 function remove_blanks(str){
   var array=[];
   var sentence=str.split("");
