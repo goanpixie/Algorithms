@@ -1,3 +1,5 @@
+// function return non blank character count:
+
 function count_non_spaces(str){
   var array=[];
   var sentence= str.split("");
