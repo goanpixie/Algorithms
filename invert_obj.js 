@@ -1,0 +1,14 @@
+var invert = function (obj) {
+
+  var new_obj = {};
+
+  for (var i in obj) {
+    if(obj.hasOwnProperty(i)) {
+      new_obj[obj[i]] = i;
+    }
+  }
+
+  return new_obj;
+};
+
+console.log(invert({"a":1}))
