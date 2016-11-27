@@ -23,9 +23,18 @@ function contains(val){
   return "Given value is not present"
 }
 
+function isEmpty(){
+  if(queue.length==0){
+    return true
+  }
+  return false
+}
+
 console.log(enqueue(2))
 console.log(enqueue(3))
 console.log(enqueue(4))
 console.log(dequeue())
 console.log(peek())
 console.log(contains(4))
+console.log(isEmpty())
+
