@@ -30,6 +30,10 @@ function isEmpty(){
   return false
 }
 
+function size(){
+  return (queue.length);
+}
+
 console.log(enqueue(2))
 console.log(enqueue(3))
 console.log(enqueue(4))
@@ -37,4 +41,5 @@ console.log(dequeue())
 console.log(peek())
 console.log(contains(4))
 console.log(isEmpty())
+console.log(size())
 
