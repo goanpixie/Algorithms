@@ -9,3 +9,5 @@ function interleaved_str(str1,str2,str3){
  
 }
 console.log(interleaved_str("dne","ail","daniel"))
+
+//Added algorithm"
