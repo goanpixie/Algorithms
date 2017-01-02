@@ -15,3 +15,10 @@ Any number that does NOT get deleted due to above process is called “lucky”.
 Therefore, set of lucky numbers is 1, 3, 7, 13,………
 
 Now, given an integer ‘n’, write a function to say whether this number is lucky or not.*/
+
+function isLucky(num){
+	var array=[1]
+	for(var i=0;i<50;i++){
+        array.push[i]
+	}
+}
