@@ -7,7 +7,7 @@
 <body>
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
   <script>
-    // ## Array Cardio Day 2
+    // ## Array Cardio Day 2:Take it
 
     const people = [
       { name: 'Wes', year: 1988 },
