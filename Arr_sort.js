@@ -23,3 +23,8 @@ var lesson =[
   
   
   console.log(output)
+
+// #Reduce:
+var val = [1,2,3,4,5]
+var answer = val.reduce((prev,next)=> prev+next)  
+console.log(answer)
