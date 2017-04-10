@@ -1,9 +1,9 @@
-function Double(Arr){
-  var NewArray=[];
-  for(var i=0;i<Arr.length;i++){
-    NewArray.push(Arr[i]*2)
-  }
-  return NewArray;
+function doubletrouble(arr){
+  var newarr=[];
+for(var i=0;i<arr.length;i++){
+  newarr.push(arr[i])
+  newarr.push(arr[i]);
 }
-		  
-	console.log(Double([2,3,4]))
+return newarr;
+}
+console.log(doubletrouble([14,"ulsyn",42,false]))
