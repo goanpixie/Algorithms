@@ -1,0 +1,19 @@
+function add(input){return input+1}
+function substract(input){return input-1}
+function double(input){return input*2}
+function halve(input){return input/2}
+
+var initial_value = 1;
+var order =[
+  add,
+  add,
+  add,
+  double,
+  substract,
+  halve]
+  
+var answer = order.reduce(function(acc, fn){
+ return fn(acc) 
+},initial_value)
+
+console.log(answer)
