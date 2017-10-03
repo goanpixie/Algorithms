@@ -8,6 +8,7 @@ Note:
 The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows.
 */
 
+//Solution1:
 
 var reverse = function(x) {
     var str = x.toString()
@@ -26,4 +27,20 @@ var reverse = function(x) {
      return 0;
      }
     return parseInt(reverse); 
+};
+
+//Solution2:
+
+var reverse = function(x) {
+    var isNegative = (x < 0);
+    var val = Math.abs(x);
+    var revVal = val.toString().split('').reverse().join('');
+    var result =  +revVal * ((x < 0) ? -1 : 1);
+    
+  
+    if(+revVal <= Math.pow(2, 31)) {
+        return result;
+    } else {
+        return 0;
+    }
 };
