@@ -3,6 +3,7 @@
 
 //The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 
+//Solution1:155ms
 function isValid(s){
 	if (s.charAt(0) === "}" ||s.charAt(0)=== ")" ||s.charAt(0)=== "]" ){
     return false;
@@ -35,3 +36,30 @@ function isValid(s){
   }
  return true;
 }
+
+//Solution2:102ms
+var isValid = function(s) {
+ let stack = [];
+let pairs = {
+    "{" : "}",
+    "}" : "{",
+    ")" : "(",
+    "]": "[",
+    "(" : ")",
+    "[" : "]"
+}
+  for (let ch of s) {
+    if (ch === '[' || ch === '(' || ch === "{") {
+      stack.push(ch);
+    } else if (ch === ']' || ch === ")" || ch === "}"){
+      if (stack.length === 0) {
+        return false;
+      }
+      let r = stack.pop()
+      if (r !== pairs[ch]) {
+          return false;
+      }
+    }
+  }
+  return (stack.length === 0); 
+};
