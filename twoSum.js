@@ -19,3 +19,4 @@ function twoSum(arr){
 }
 
 console.log(twoSum([-4,3,5,7,4]))
+console.log(twoSum([-11,5,-7,7,4]))
