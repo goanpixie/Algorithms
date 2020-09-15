@@ -1,3 +1,6 @@
+
+//#
+//Given an array, find the sum of all numbers between the K1’th and K2’th smallest elements of that array.
 const Heap = require('./collections/heap'); //http://www.collectionsjs.com
 
 function find_sum_of_elements(nums, k1, k2) {
