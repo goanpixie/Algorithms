@@ -1,4 +1,5 @@
-const Heap = require('./collections/heap'); //http://www.collectionsjs.com
+//no same letter shd be adjacent to each other
+const Heap=require( './collections/heap' ); //http://www.collectionsjs.com
 
 function rearrange_string(str) {
   charFrequencyMap = {};
